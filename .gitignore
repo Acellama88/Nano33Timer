@@ -30,3 +30,18 @@
 *.exe
 *.out
 *.app
+
+# Compiled Filed
+*.hex
+*.elf
+*.bin
+
+# Filders
+/include
+/lib
+/test
+/.pio
+/.vscode
+
+# Files
+platformio.ini
