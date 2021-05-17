@@ -25,7 +25,7 @@ void chan_0_callback(void)
 
 void setup() {
   timer.setTimer(3,9);  //Configure the BitMode (3 - 32 Bit) and Prescalar (9: 2 ^ 9 = 512)
-  timer.setChannel(0,TIM_COMPARE_CALC(2)); //Set Channel 2 to trigger on 2 Seconds
+  timer.setChannel(0,TIM_COMPARE_CALC(2)); //Set Channel 0 to trigger on 2 Seconds
   timer.RegisterCallback(chan_0_callback, 0); //Register the Callback Function for the Interrupt
   timer.begin(); //Start the Timer
   pinMode(LED_BUILTIN,OUTPUT); //Set LED Pin to Output
